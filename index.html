@@ -10,8 +10,8 @@
 
     <div id="app">
         <div class="container my-5">
-            <ul>
-                <li v-for="mail in mails" v-if="mails.length == 10">
+            <ul v-if="mails.length == 10">
+                <li v-for="mail in mails">
                     {{ mail }}
                 </li>
             </ul>
